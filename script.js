@@ -12,15 +12,44 @@ function toggleDropdown(id) {
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
 
+/* Helper to hide/show menu button */
+function hideMenuButton() {
+    document.querySelector(".open-btn").style.display = "none";
+}
+function showMenuButton() {
+    document.querySelector(".open-btn").style.display = "block";
+}
+
 /* === Individual Popups === */
-function showCodeBox() { document.getElementById('codeBox').style.display = 'flex'; }
-function hideCodeBox() { document.getElementById('codeBox').style.display = 'none'; }
+function showCodeBox() { 
+    document.getElementById('codeBox').style.display = 'flex'; 
+    closeSidebar(); 
+    hideMenuButton(); // hide menu button
+}
+function hideCodeBox() { 
+    document.getElementById('codeBox').style.display = 'none'; 
+    showMenuButton(); // show menu button
+}
 
-function showInfoBox() { document.getElementById('infoBox').style.display = 'flex'; }
-function hideInfoBox() { document.getElementById('infoBox').style.display = 'none'; }
+function showInfoBox() { 
+    document.getElementById('infoBox').style.display = 'flex'; 
+    closeSidebar(); 
+    hideMenuButton(); 
+}
+function hideInfoBox() { 
+    document.getElementById('infoBox').style.display = 'none'; 
+    showMenuButton(); 
+}
 
-function showWifiCodeBox() { document.getElementById('wifiCodeBox').style.display = 'flex'; }
-function hideWifiCodeBox() { document.getElementById('wifiCodeBox').style.display = 'none'; }
+function showWifiCodeBox() { 
+    document.getElementById('wifiCodeBox').style.display = 'flex'; 
+    closeSidebar(); 
+    hideMenuButton(); 
+}
+function hideWifiCodeBox() { 
+    document.getElementById('wifiCodeBox').style.display = 'none'; 
+    showMenuButton(); 
+}
 
 /* === Copy Text === */
 function copyText(elementId) {
