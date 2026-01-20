@@ -130,13 +130,7 @@ body, html {
 }
 .round-btn img {width:120%; height:120%; object-fit:contain;}
 .round-btn:hover {transform:scale(1.1); box-shadow:0 6px 12px rgba(0,0,0,0.3); background-color:#f7f5f4;}
-.button-item span {
-    color: white;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    white-space: pre-line; /* preserves the line break */
-}
+.button-item span {color:white; font-size:13px; font-weight:bold; text-align:center;}
 
 /* === Popup Boxes === */
 .popup-box {
@@ -256,4 +250,3 @@ body, html {
     text-decoration: none;
     color: inherit;
 }
-
